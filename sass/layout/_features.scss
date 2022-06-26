@@ -1,0 +1,35 @@
+.features-list {
+  display: flex;
+}
+
+.features-list__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: $button-color;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.features-list__item {
+  min-width: 270px;
+  padding-top: 94px;
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.features-list__name {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $h-color;
+}
+
+.features-list__text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

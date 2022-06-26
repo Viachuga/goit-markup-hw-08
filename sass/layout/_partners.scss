@@ -1,0 +1,40 @@
+.partners-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.partners {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.partners-list__item + .partners-list__item {
+  margin-left: 30px;
+}
+
+.partners-list__item:hover .partners-list__link,
+.partners-list__item:focus .partners-list__link {
+  fill: $akcent-color;
+  border-color: $akcent-color;
+}
+
+.partners-list__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $akcent-color;
+    border-color: $akcent-color;
+  }
+}
+
+.partners-list__icon {
+  fill: currentColor;
+}

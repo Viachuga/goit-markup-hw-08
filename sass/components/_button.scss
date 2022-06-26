@@ -1,0 +1,71 @@
+.btn-form,
+.btn-spam {
+  min-width: 200px;
+  height: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  background-color: $akcent-color;
+  color: $white-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.baner-btn {
+  padding: 10px 32px;
+  min-width: 200px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  background-color: $akcent-color;
+  color: $white-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+  }
+}
+
+.filter-list__btn {
+  padding: 6px 22px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: $button-color;
+  color: $h-color;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $akcent-color;
+    color: $white-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
