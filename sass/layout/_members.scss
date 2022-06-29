@@ -8,13 +8,30 @@
   color: $h-color;
 }
 
+.members-label {
+@media screen and (max-width:480px) {
+ padding-top: 60px;}
+
+ @media screen and (min-width:481px) and (max-width:768px) {
+ padding-top: 60px;}
+}
+
 .members-list__item {
   background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   & + & {
-    margin-left: 30px;
+    // margin-left: 30px;
+   
   }
+  
+  @media screen and (max-width:480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width:481px) and (max-width:768px) {
+    width: calc((100% - 30px) / 2);}
+  
 }
 
 .member-info__position {
@@ -27,18 +44,36 @@
 
 .about-us {
   background-color: $button-color;
-  padding-top: 94px;
+  // padding-top: 94px;
+
 }
 
 .members-list {
   display: flex;
-  margin-top: 50px;
+  
+  // margin-top: 50px;
+  
+  @media screen and (max-width:480px) {
+    margin-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+  gap: 30px;
+  }
+
+  @media screen and (min-width:481px) and (max-width:768px) {
+    margin-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+  gap: 30px;
+}
 }
 
 .social-list__item {
   width: 44px;
   height: 44px;
-}
+  }
+
+
 .social-list__item + .social-list__item {
   margin-left: 10px;
 }
