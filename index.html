@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- хедер -->
-    <!-- <header class="header-page">
+    <header class="header-page">
       <div class="container header">
         <nav class="navigation">
           <a href="./index.html" class="logo logo--dark link"><span class="logo--acent">Web</span>Studio</a>
@@ -41,7 +41,7 @@
           </ul>
         </nav>
 
-        <ul class="contacts-list list">
+        <!-- <ul class="contacts-list list">
           <li class="contacts-list__item">
             <a href="mailto:info@devstudio.com" class="contacts-list__link contacts-list__text link"
               ><svg class="contacts-list__icon" width="16" height="12">
@@ -58,16 +58,16 @@
               +38 096 111 11 11
             </a>
           </li>
-        </ul>
+        </ul> -->
       </div>
-    </header> -->
+    </header>
 
     <!-- кінець хедер -->
 
     <!-- герой -->
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container container--hero">
           <h1 class="baner__text">
             Ефективні рішення <br />
             для вашого бізнесу
@@ -140,15 +140,39 @@
           <h2 class="works__label">Чим ми займаємось</h2>
           <ul class="works-list list">
             <li class="works-list__item">
-              <img src="images/box1.jpg" width="370" height="294" alt="box1" />
+              <picture>
+                <source
+                srcset="./images/work-1@1.jpg 1x, ./images/work-1@2.jpg x2"
+                type="image/jpeg"
+                media="(min-width: 1200px)"
+                />
+              <img  src="images/work-1@1.jpg" width="370px" height="auto" alt="box1" />
+              </picture>
+
               <p class="works-list__text">Десктопные приложения</p>
             </li>
+
             <li class="works-list__item">
-              <img src="images/box2.jpg" width="370" height="294" alt="box2" />
+              <picture>
+                <source
+                srcset="./images/work-2@1.jpg 1x, ./images/work-2@2.jpg x2"
+                type="image/jpeg"
+                media="(min-width: 1200px)"
+                />
+              <img  src="images/work-2@1.jpg" width="370px" height="auto" alt="box2" />
+              </picture>
               <p class="works-list__text">Мобильные приложения</p>
             </li>
+
             <li class="works-list__item">
-              <img src="images/box3.jpg" width="370" height="294" alt="box3" />
+              <picture>
+                <source
+                srcset="./images/work-3@1.jpg 1x, ./images/work-3@2.jpg x2"
+                type="image/jpeg"
+                media="(min-width: 1200px)"
+                />
+              <img  src="images/work-3@1.jpg" width="370px" height="auto" alt="box3" />
+              </picture>
               <p class="works-list__text">Дизайнерские решения</p>
             </li>
           </ul>

@@ -1,7 +1,8 @@
 .hero {
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-desk@1.jpg);
   background-color: $bg-hero;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,26 +13,64 @@
   padding-bottom: 200px;
 
   @include mobile {
+    width: 100%;
     height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/mob/index/Header-1-mob.jpg);
+    background-size: cover;
+    background-position: center;
     padding-top: 118px;
     margin-bottom: 60px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/mob/index/Header-2-mob.jpg);
+    }
   }
 
   @include tablet {
-      height: 400px;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/tab/index/hero-tab@1.jpg);
+    background-size: cover;
+    background-position: center;
     padding-top: 118px;
     margin-bottom: 60px;
-    }
 
-    @include desktop {
-   
-    margin-bottom: 94px;
-    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/tab/index/hero-tab@2.jpg);}
+    
+}
+@include desktop {
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-desk@1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  margin-bottom: 94px;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-desk@2.jpg);}
+  
+}
 }
 
-
-
 .baner__text {
+  max-width: 100%;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -45,7 +84,18 @@
 
   @include mobile {
     font-size: 26px;
-  line-height: 1.62;
-    }
-}
+    line-height: 1.62;
+  }
 
+  @include tablet {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+@include desktop {
+  font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    width: 100%;
+   
+}
+}
