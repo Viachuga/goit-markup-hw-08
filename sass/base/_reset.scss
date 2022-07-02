@@ -68,4 +68,17 @@ body {
 
       @media screen and (min-width:481px) and (max-width:768px) {
         padding-bottom: 60px;}
+        
+        
+
+        // @media screen and (min-width:1200px) {
+        //   padding-bottom: 94px;
+        //   padding-top: 94px;
+        // }
   }
+
+.container--portfolio {
+  @media screen and (min-width:481px) and (max-width:768px) {
+      max-width: 480px;
+  }
+}

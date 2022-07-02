@@ -1,17 +1,20 @@
 container--features {
-  @media screen and (min-width:481px) and (max-width:768px) {
   width: 100%;}
-}
+
 
 .features-list {
   display: flex;
 
+  @include desktop {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
 
-  @media screen and (max-width:480px) {
+  @include mobile {
   flex-wrap: wrap;
   gap: 30px;}
 
-  @media screen and (min-width:481px) and (max-width:768px) {
+  @include tablet {
     flex-wrap: wrap;
     gap: 30px;
     }
@@ -29,10 +32,10 @@ container--features {
 
 .features-list__item {
 width: 100%;
-  // padding-top: 94px;
+  
   // & + & {
   //   margin-left: 30px;}
-  @media screen and (min-width:481px) and (max-width:768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
 }
@@ -47,8 +50,11 @@ width: 100%;
   color: $h-color;
 
  
-  @media screen and (max-width:480px) {
+  @include mobile {
     text-align: center;
+  }
+  @include desktop {
+    text-align: left;
   }
 }
 

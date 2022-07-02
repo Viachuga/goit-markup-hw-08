@@ -11,18 +11,24 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
-  @media screen and (max-width:480px) {
+  @include mobile {
     height: 400px;
     padding-top: 118px;
     margin-bottom: 60px;
-    }
+  }
 
-    @media screen and (min-width:481px) and (max-width:768px) {
+  @include tablet {
       height: 400px;
     padding-top: 118px;
     margin-bottom: 60px;
     }
+
+    @include desktop {
+   
+    margin-bottom: 94px;
+    }
 }
+
 
 
 .baner__text {
@@ -37,7 +43,7 @@
   text-transform: uppercase;
   color: $white-color;
 
-  @media screen and (max-width:480px) {
+  @include mobile {
     font-size: 26px;
   line-height: 1.62;
     }

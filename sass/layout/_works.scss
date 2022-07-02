@@ -11,11 +11,10 @@
 .works-list {
   display: flex;
   margin-top: 50px;
+  gap: 30px;
 }
 
-.works-list__item + .works-list__item {
-  margin-left: 30px;
-}
+
 
 .works-list__item {
   position: relative;
