@@ -26,8 +26,6 @@
   }
 }
 
-
-
 .footer {
   background-color: $bg-hero;
   padding-top: 60px;
@@ -37,9 +35,8 @@
 .address-list {
   @include mobile {
     text-align: center;
-    
-   }}
-
+  }
+}
 
 .address-list__item + .address-list__item {
   margin-top: 9px;
@@ -70,7 +67,6 @@
 
 .address-list__text {
   color: $address-color;
-  
 }
 
 .footer-soc-label {
@@ -140,19 +136,20 @@
   &:focus {
     border-color: $akcent-color;
   }
-  @media screen and (max-width: 768px)  {
+  @media screen and (max-width: 768px) {
     width: 450px;
     max-width: 100%;
     padding-right: 15px;
     margin-right: 0;
     margin-bottom: 20px;
-   }
-   @include tablet {
+  }
+  @include tablet {
     width: 450px;
     max-width: 100%;
     margin-right: 0px;
-  margin-bottom: 20px;}
-   }
+    margin-bottom: 20px;
+  }
+}
 
 .spam-form {
   display: flex;
@@ -165,8 +162,8 @@
   @include tablet {
     flex-direction: column;
     align-items: center;
-    
-}}
+  }
+}
 
 .spam {
   margin-left: 93px;
@@ -175,12 +172,13 @@
     width: 100%;
   }
   @include tablet {
-    margin-left:0px ;
-   padding-top: 60px;
+    margin-left: 0px;
   }
 }
 
-.container--footer {
-  @media screen and (max-width: 768px)  {
-  max-width: 480px;
-}}
+.container-footer {
+  @media screen and (max-width: 768px) {
+    max-width: 480px;
+    padding-bottom: 60px;
+  }
+}

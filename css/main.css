@@ -234,6 +234,11 @@ img {
     margin-right: 88px;
   }
 }
+@media screen and (max-width: 767px) {
+  .logo--dark {
+    margin-right: 0px;
+  }
+}
 .logo--light {
   color: #ffffff;
 }
@@ -1082,13 +1087,13 @@ container--features {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .spam {
     margin-left: 0px;
-    padding-top: 60px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .container--footer {
+  .container-footer {
     max-width: 480px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1317,8 +1322,8 @@ container--features {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -1330,6 +1335,19 @@ container--features {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-div {
+    width: 528px;
+    min-height: 581px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal-div {
+    max-width: 450px;
+    width: 100%;
+    min-height: 609px;
+  }
 }
 
 .close-icon {
@@ -1486,6 +1504,18 @@ container--features {
   border: 2px solid #212121;
   border-radius: 3px;
   margin-right: 8px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-text-box {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form-text-box {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .check-input:checked + .form-text-box::before {
