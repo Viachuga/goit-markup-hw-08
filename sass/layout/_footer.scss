@@ -1,17 +1,45 @@
 .footer-main {
   display: flex;
   align-items: baseline;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 768px;
+    max-width: 100%;
+  }
 }
 
 .footer-social {
   margin-left: 70px;
+  @include mobile {
+    margin-left: 0px;
+    padding-bottom: 60px;
+  }
+  @include tablet {
+    margin-left: 0px;
+  }
 }
+
+
 
 .footer {
   background-color: $bg-hero;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.address-list {
+  @include mobile {
+    text-align: center;
+    
+   }}
+
 
 .address-list__item + .address-list__item {
   margin-top: 9px;
@@ -42,14 +70,18 @@
 
 .address-list__text {
   color: $address-color;
+  
 }
 
 .footer-soc-label {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-color;
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .soc-list {
@@ -108,13 +140,47 @@
   &:focus {
     border-color: $akcent-color;
   }
-}
+  @media screen and (max-width: 768px)  {
+    width: 450px;
+    max-width: 100%;
+    padding-right: 15px;
+    margin-right: 0;
+    margin-bottom: 20px;
+   }
+   @include tablet {
+    width: 450px;
+    max-width: 100%;
+    margin-right: 0px;
+  margin-bottom: 20px;}
+   }
 
 .spam-form {
   display: flex;
   margin-top: 20px;
-}
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    
+}}
 
 .spam {
   margin-left: 93px;
+  @include mobile {
+    margin-left: 0px;
+    width: 100%;
+  }
+  @include tablet {
+    margin-left:0px ;
+   padding-top: 60px;
+  }
 }
+
+.container--footer {
+  @media screen and (max-width: 768px)  {
+  max-width: 480px;
+}}

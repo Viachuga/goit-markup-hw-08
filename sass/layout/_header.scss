@@ -5,24 +5,27 @@
 
 .header {
   display: flex;
+  @include mobile  {
+      display: flex;
+    justify-content: flex-start;
+     }
+  
 }
 
 .contacts-list__item {
   @include tablet {
-
   }
   @include desktop {
-  display: flex;
-  align-items: center;
-  & + & {
-    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    & + & {
+      margin-left: 50px;
+    }
   }
-}
 }
 
 .nav-list,
 .contacts-list {
-
   list-style: none;
   display: flex;
 }
@@ -38,7 +41,7 @@
     gap: 10px;
     margin-left: auto;
     margin-top: 0;
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -71,8 +74,7 @@
   color: $akcent-color;
 }
 
-.current
- {
+.current {
   color: $hover-btn;
 }
 
@@ -101,12 +103,9 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 @include mobile {
-  .contacts-list, .nav-list {
+  .contacts-list,
+  .nav-list {
     display: none;
   }
-  // .header-page {
-  //   height: 60px;
-  // }
 }

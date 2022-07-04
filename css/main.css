@@ -14,7 +14,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -214,6 +214,12 @@ img {
   .logo {
     font-size: 24px;
     line-height: 1.16;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .logo--acent {
@@ -232,7 +238,7 @@ img {
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
     height: 60px;
   }
@@ -246,6 +252,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -364,7 +380,8 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .contacts-list, .nav-list {
+  .contacts-list,
+.nav-list {
     display: none;
   }
 }
@@ -845,15 +862,54 @@ container--features {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+@media screen and (max-width: 767px) {
+  .footer-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+    width: 768px;
+    max-width: 100%;
+  }
+}
 
 .footer-social {
   margin-left: 70px;
+}
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-left: 0px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-social {
+    margin-left: 0px;
+  }
 }
 
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .address-list {
+    text-align: center;
+  }
 }
 
 .address-list__item + .address-list__item {
@@ -890,10 +946,15 @@ container--features {
 
 .footer-soc-label {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .footer-soc-label {
+    text-align: center;
+  }
 }
 
 .soc-list {
@@ -962,6 +1023,23 @@ container--features {
 .spam-mail:hover, .spam-mail:focus {
   border-color: #2196f3;
 }
+@media screen and (max-width: 768px) {
+  .spam-mail {
+    width: 450px;
+    max-width: 100%;
+    padding-right: 15px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .spam-mail {
+    width: 450px;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
 
 .spam-form {
   display: -webkit-box;
@@ -969,9 +1047,49 @@ container--features {
   display: flex;
   margin-top: 20px;
 }
+@media screen and (max-width: 767px) {
+  .spam-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .spam-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .spam {
   margin-left: 93px;
+}
+@media screen and (max-width: 767px) {
+  .spam {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .spam {
+    margin-left: 0px;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container--footer {
+    max-width: 480px;
+  }
 }
 
 .card-label__name {
