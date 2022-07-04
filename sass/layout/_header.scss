@@ -8,15 +8,21 @@
 }
 
 .contacts-list__item {
+  @include tablet {
+
+  }
+  @include desktop {
   display: flex;
   align-items: center;
   & + & {
     margin-left: 50px;
   }
 }
+}
 
 .nav-list,
 .contacts-list {
+
   list-style: none;
   display: flex;
 }
@@ -25,6 +31,15 @@
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-top: 0;
+  margin-bottom: 0;
+  }
 }
 
 .navigation {
@@ -61,7 +76,11 @@
   color: $hover-btn;
 }
 
-
+.contacts-list__link {
+  @include tablet {
+    padding: 0;
+  }
+}
 .contacts-list__link:hover,
 .contacts-list__link:focus {
   color: $akcent-color;
@@ -80,4 +99,14 @@
   fill: $text-color;
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+@include mobile {
+  .contacts-list, .nav-list {
+    display: none;
+  }
+  // .header-page {
+  //   height: 60px;
+  // }
 }
