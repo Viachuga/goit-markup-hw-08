@@ -60,8 +60,79 @@
           </li>
         </ul>
       </div>
-    </header>
+      <div class="header-menu" data-menu-open>
+        <svg class="header-menu__icon" width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </div>
 
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="header-menu-close" data-menu-close>
+          <svg class="mob-menu__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close-mob"></use>
+          </svg>
+        </div>
+        <div class="pages-mob">
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link current--menu link">Студія</a>
+            </li>
+
+            <li class="mob-menu__item">
+              <a href="portfolio.html" class="mob-menu__link link">Портфоліо</a>
+            </li>
+
+            <li class="mob-menu__item">
+              <a href="#" class="mob-menu__link link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-social-mob">
+          <div class="contacts-mob">
+            <ul class="contacts-mob__list list">
+              <li class="contacts-mob__item contacts-mob__item--tel">
+                <a href="tel:+380961111111" class="contacts-mob__link contacts-mob__text-mob link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+
+              <li class="contacts-mob__item">
+                <a href="mailto:info@devstudio.com" class="contacts-mob__link contacts-mob__text-mail link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-soc">
+            <ul class="mob-socials__list">
+              <li class="mob-socials__item">
+                <a href="#" class="mob-socials__link link">
+                  <p>Instagram</p>
+                </a>
+              </li>
+
+              <li class="mob-socials__item">
+                <a href="#" class="mob-socials__link link">
+                  <p>Twitter</p>
+                </a>
+              </li>
+
+              <li class="mob-socials__item">
+                <a href="#" class="mob-socials__link link">
+                  <p>Facebook</p>
+                </a>
+              </li>
+
+              <li class="mob-socials__item">
+                <a href="#" class="mob-socials__link link">
+                  <p>LinkedIn</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- кінець хедер -->
 
     <!-- герой -->
@@ -142,11 +213,11 @@
             <li class="works-list__item">
               <picture>
                 <source
-                srcset="./images/work-1@1.jpg 1x, ./images/work-1@2.jpg x2"
-                type="image/jpeg"
-                media="(min-width: 1200px)"
+                  srcset="./images/work-1@1.jpg 1x, ./images/work-1@2.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
                 />
-              <img  src="images/work-1@1.jpg" width="370px" height="auto" alt="box1" />
+                <img src="images/work-1@1.jpg 1x" width="370" height="auto" alt="box1"/>
               </picture>
 
               <p class="works-list__text">Десктопные приложения</p>
@@ -155,11 +226,11 @@
             <li class="works-list__item">
               <picture>
                 <source
-                srcset="./images/work-2@1.jpg 1x, ./images/work-2@2.jpg x2"
-                type="image/jpeg"
-                media="(min-width: 1200px)"
+                  srcset="./images/work-2@1.jpg 1x, ./images/work-2@2.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
                 />
-              <img  src="images/work-2@1.jpg" width="370px" height="auto" alt="box2" />
+                <img src="images/work-2@1.jpg" width="370" height="auto" alt="box2" />
               </picture>
               <p class="works-list__text">Мобильные приложения</p>
             </li>
@@ -167,11 +238,11 @@
             <li class="works-list__item">
               <picture>
                 <source
-                srcset="./images/work-3@1.jpg 1x, ./images/work-3@2.jpg x2"
-                type="image/jpeg"
-                media="(min-width: 1200px)"
+                  srcset="./images/work-3@1.jpg 1x, ./images/work-3@2.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
                 />
-              <img  src="images/work-3@1.jpg" width="370px" height="auto" alt="box3" />
+                <img src="images/work-3@1.jpg" width="370" height="auto" alt="box3" />
               </picture>
               <p class="works-list__text">Дизайнерские решения</p>
             </li>
@@ -626,5 +697,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
