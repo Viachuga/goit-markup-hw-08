@@ -413,6 +413,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
   padding-top: 64px;
   margin: 0;
@@ -1257,6 +1259,7 @@ container--features {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .spam {
     margin-left: 0px;
+    padding-top: 60px;
   }
 }
 
