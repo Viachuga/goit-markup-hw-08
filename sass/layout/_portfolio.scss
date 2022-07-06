@@ -100,13 +100,15 @@
   background-color: rgba(33, 150, 243, 0.9);
   width: 100%;
   height: 100%;
-  transform: translatey(100%);
+  transform: translatey(101%);
   transition: transform 250ms ease;
   .cards-list__item:hover & {
     transform: translatex(0);
+    transform: translateY(101%);
   }
   .cards-list__link:focus & {
     transform: translatex(0);
+    transform: translateY(101%);
   }
   & p {
     color: $white-color;
@@ -116,6 +118,7 @@
     line-height: 1.56;
   }
 }
+
 
 .cards-list__link {
   display: block;
