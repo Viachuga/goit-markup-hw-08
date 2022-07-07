@@ -6,6 +6,7 @@ body {
   background-color: $white-color;
 }
 
+
 .container {
   max-width: 480px;
   margin: 0 auto;
@@ -70,11 +71,7 @@ img {
 
 .section {
   padding-bottom: 94px;
-  @media screen and (max-width: 480px) {
-    padding-bottom: 60px;
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     padding-bottom: 60px;
   }
 }
@@ -83,4 +80,16 @@ img {
   @media screen and (max-width: 1199px) {
     display: none;
   }
+}
+
+.section--features, .section--members {
+@media screen and (max-width: 1199px) {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+@media screen and (min-width: 1200px) {
+  padding-top: 94px;
+  padding-bottom: 94px;}
+
 }

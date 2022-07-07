@@ -104,11 +104,11 @@
   transition: transform 250ms ease;
   .cards-list__item:hover & {
     transform: translatex(0);
-    transform: translateY(101%);
+    transform: translateY(101);
   }
   .cards-list__link:focus & {
     transform: translatex(0);
-    transform: translateY(101%);
+    transform: translateY(101);
   }
   & p {
     color: $white-color;
@@ -137,7 +137,13 @@
 }
 
 .section-filter {
-  padding: 94px 0px;
+  @include desktop {
+  padding: 94px 0px;}
+
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0px;
+    
+  }
 }
 
 .card-label {
@@ -147,7 +153,7 @@
   height: auto;
 
   @include tablet {
-    flex-grow: 1;
-    max-width: 450px;
+    // flex-grow: 1;
+    width: 100%;
   }
 }

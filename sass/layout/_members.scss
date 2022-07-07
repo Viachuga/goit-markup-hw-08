@@ -8,19 +8,6 @@
   color: $h-color;
 }
 
-.members-label {
-  @include mobile {
-    padding-top: 60px;
-  }
-
-  @include tablet {
-    padding-top: 60px;
-  }
-
-  @include desktop {
-    padding-top: 94px;
-  }
-}
 
 .members-list__item {
   background-color: $white-color;
